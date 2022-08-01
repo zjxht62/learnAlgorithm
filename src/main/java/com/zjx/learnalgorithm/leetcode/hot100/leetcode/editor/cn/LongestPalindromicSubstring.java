@@ -20,11 +20,41 @@
   public class LongestPalindromicSubstring{
       public static void main(String[] args) {
            Solution solution = new LongestPalindromicSubstring().new Solution();
+          System.out.println(solution.longestPalindrome("aa"));
+
       }
+
       //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
-    public String longestPalindrome(String s) {
 
+
+    public String longestPalindrome(String s) {
+        String ans = "";
+        int max = 0;
+        int len = s.length();
+
+        for (int i = 0; i < len; i++) {
+            for (int j = i + 1; j <= len; j++) {
+                String test = s.substring(i, j);
+                if (validPalindromic(test) && test.length() > max) {
+                    ans = s.substring(i, j);
+                    max = Math.max(max, ans.length());
+                }
+            }
+        }
+
+        return ans;
+    }
+
+    boolean validPalindromic(String s) {
+        for (int i = 0; i < s.length() / 2; i++) {
+            if (s.charAt(i) == s.charAt(s.length() -1 - i)) {
+                continue;
+            } else {
+                return false;
+            }
+        }
+        return true;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
