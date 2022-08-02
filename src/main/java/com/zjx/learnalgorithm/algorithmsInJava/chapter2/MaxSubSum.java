@@ -1,7 +1,7 @@
 package com.zjx.learnalgorithm.algorithmsInJava.chapter2;
 
 
-public class Demo {
+public class MaxSubSum {
     //O(N^3)
     public static int maxSubSum1(int[] a) {
         int maxSum = 0;
@@ -37,6 +37,7 @@ public class Demo {
         return maxSum;
     }
 
+    //O(NlogN)
     public static int maxSubSum3(int[] a) {
         return maxSumRec(a, 0, a.length - 1);
     }
@@ -91,9 +92,23 @@ public class Demo {
 
     }
 
+    public static int maxSubSum4(int[] a) {
+        int maxSum = 0, thisSum = 0;
+        for (int j = 0; j < a.length; j++) {
+            thisSum += a[j];
+            if (thisSum > maxSum) {
+                maxSum = thisSum;
+            } else if (thisSum < 0) {
+                thisSum = 0;
+            }
+        }
+
+        return maxSum;
+    }
+
 
     public static void main(String[] args) {
         int[] ints = {3, -4, 1, 7, -2, 5, -6, 4};
-        System.out.println(maxSubSum3(ints));
+        System.out.println(maxSubSum4(ints));
     }
 }
