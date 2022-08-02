@@ -1,4 +1,4 @@
-package com.zjx.learnalgorithm.algorithmsInJava.chapter2;
+package com.zjx.learnalgorithm.algorithmInJava.chapter2;
 
 public class BinarySearch {
 
