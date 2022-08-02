@@ -24,6 +24,7 @@
       //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public String longestPalindrome(String s) {
+        return null;
 
     }
 }

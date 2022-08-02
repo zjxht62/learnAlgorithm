@@ -1,6 +1,5 @@
 package com.zjx.learnalgorithm.demos;
 
-import com.sun.deploy.panel.ITreeNode;
 
 /**
  * Demo class

@@ -1,9 +1,5 @@
 package com.zjx.learnalgorithm.GrokkingAlgorithms.chapter3;
 
-import com.sun.org.apache.bcel.internal.generic.NEW;
-import sun.print.SunMinMaxPage;
-
-import java.net.CacheRequest;
 import java.util.ArrayList;
 import java.util.List;
 

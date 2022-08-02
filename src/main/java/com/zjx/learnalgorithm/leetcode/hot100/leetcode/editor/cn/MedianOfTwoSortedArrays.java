@@ -54,7 +54,7 @@
 
 package com.zjx.learnalgorithm.leetcode.hot100.leetcode.editor.cn;
 
-import jdk.nashorn.internal.ir.annotations.Ignore;
+
 
 public class MedianOfTwoSortedArrays {
     public static void main(String[] args) {
