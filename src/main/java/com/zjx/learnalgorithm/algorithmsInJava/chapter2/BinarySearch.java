@@ -4,6 +4,7 @@ public class BinarySearch {
 
     public static <AnyType extends Comparable<? super AnyType>> int binarySearch(AnyType[] a, AnyType x) {
         int low = 0, high = a.length - 1;
+        //有时查找到最后正好l=h
         while (low<=high){
             int mid = (low + high)/2;
             if (x.compareTo(a[mid])>0) {
