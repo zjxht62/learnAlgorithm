@@ -24,5 +24,7 @@ public class BinarySearch {
         int result = binarySearch(integers, 6);
         System.out.println(result);
 
+        System.out.println(5%69);
+
     }
 }
