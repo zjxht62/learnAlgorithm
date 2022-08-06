@@ -2,7 +2,7 @@ package com.zjx.learnalgorithm.algorithmInJava.chapter1.generic;
 
 /**
  * 1.5.1
- * 简单的单行类和接口
+ * 简单的泛型类和接口
  * @param <AnyType>
  */
 
